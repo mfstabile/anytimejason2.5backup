@@ -1,0 +1,15 @@
+/* Jason Project
+
+   See Prometheus specification in doc folder
+
+*/
+
+MAS domestic_robot {
+    infrastructure: Centralised(anytime_asynch,60000,annotationSort,0.99)
+    environment: HouseEnv(gui) // use "nogui" as parameter to not show the GUI
+    //executionControl: jason.control.AnytimeExecutionControl
+    agents: robot;
+            owner;
+            supermarket;
+}
+
